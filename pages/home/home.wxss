@@ -1,0 +1,83 @@
+/* pages/home/home.wxss */
+
+.home-container {
+  padding: 20rpx;
+  background-color: #f3f3f3;
+}
+.detail{
+  background-color: #ffffff;
+  margin: 40rpx 0rpx;
+  padding: 20rpx;
+}
+.title {
+  padding: 40rpx 0rpx;
+  background-color: #ffffff;
+}
+
+.title .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title .top .font {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title .top .font .Chinese {
+  font-family: cursive;
+  font-weight: 200;
+  font-size: 68rpx;
+}
+
+.title .top .font .English {
+  font-size: 34rpx;
+
+}
+
+.title .top image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 40rpx;
+}
+
+.title .bottom {
+  padding-top: 20rpx;
+  text-align: center;
+  font-weight: bold;
+  font-size: 31rpx;
+}
+
+.tips {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tips .tip {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #212121;
+}
+
+.tips image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.terms {
+  color: #ff3f34;
+  padding-bottom: 15rpx;
+}
+
+.terms_detail {
+  color: #1e272e;
+}
+
+.term_img {
+  width: 100%;
+  height: 400rpx;
+}

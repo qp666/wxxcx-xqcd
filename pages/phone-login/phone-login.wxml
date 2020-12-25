@@ -1,0 +1,14 @@
+<!--pages/phone-login/phone-login.wxml-->
+<view class="phone-login-container">
+  <text class="phone-validate">手机号验证</text>
+  <text class="subtitle">用于即使获取课程最新信息</text>
+  <view class="content">
+    <input class="phone" bindinput="changeValue" data-name="phone" value="{{phone}}" placeholder="请输入您的手机" type="number"></input>
+    <view class="get_vcode" bindtap="getVcode" style="color:{{isCownDown ? '#a8a8a8':'#000000'}}">{{tipName}}</view>
+    <input class="vcode" bindinput="changeValue" data-name="vcode" value="{{vcode}}" placeholder="请输入验证码" type="number"></input>
+    <!-- <input class="vcode" model:value="{{vcode}}"  placeholder="请输入验证码" type="number"></input> -->
+  </view>
+  <view class="phone-login">
+    <image bindtap="phoneLogin" src="/assets/images/phone_login@2x.png"></image>
+  </view>
+</view>

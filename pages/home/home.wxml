@@ -1,0 +1,48 @@
+<!--pages/home/home.wxml-->
+<view class="home-container">
+	<!-- search-bar -->
+	<!-- <search-bar placeholder="{{terms}}"></search-bar> -->
+	<!-- 推荐课程 -->
+	<view>
+		<view class="title">
+			<view class="top">
+				<image src="/assets/images/facai.png"></image>
+				<view class="font">
+					<text class="Chinese">小卿词典</text>
+					<text class="English">xiao qing ci dian</text>
+				</view>
+			</view>
+			<view class="bottom">
+				看网络流行语,小卿词典就够了
+			</view>
+		</view>
+	</view>
+	<view class="detail">
+		<view class="tips">
+			<view class="tip">最新热词</view>
+			<!-- <navigator url="/pages/mailList/mailList" open-type="switchTab"> -->
+			<image src="/assets/images/arrow@2x.png"></image>
+			<!-- </navigator> -->
+		</view>
+		<view>
+			<view class="terms">☆{{terms}}</view>
+			<view class="terms_detail">{{terms_detail}}</view>
+			<image class="term_img" src="{{terms_img}}" alt="">
+			</image>
+		</view>
+	</view>
+	<!-- 热门视频 -->
+	<view class="detail">
+		<view class="tips" bindtap="goVideo">
+			<view class="tip">热门视频</view>
+			<image src="/assets/images/arrow@2x.png"></image>
+		</view>
+		<view class="hot-video">
+			<view class="video-item " wx:for="{{videos}}" wx:key="*this">
+				<image src="{{item.cover_photo_url}}"></image>
+				<view class="title">{{item.name}}</view>
+				<view class="subtitle">{{item.view_count}}人已观看</view>
+			</view>
+		</view>
+	</view>
+</view>

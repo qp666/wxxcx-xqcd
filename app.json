@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/phone-login/phone-login",
+    "pages/mailList/mailList",
+    "pages/my/my"
+    ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小卿词典",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fff",
+    "selectedColor": "#ff9a29",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "assets/tabs/icon_home@2x.png",
+      "selectedIconPath": "assets/tabs/icon_home_selected@2x.png"
+    },{
+      "pagePath": "pages/mailList/mailList",
+      "text": "通讯录",
+      "iconPath": "assets/tabs/icon_course@2x.png",
+      "selectedIconPath": "assets/tabs/icon_course_selected@2x.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "assets/tabs/icon_my@2x.png",
+      "selectedIconPath": "assets/tabs/icon_my_selected@2x.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
