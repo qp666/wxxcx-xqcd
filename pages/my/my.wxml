@@ -1,0 +1,64 @@
+<!--pages/my/my.wxml-->
+<view class="my-container">
+	<!-- 头部 -->
+	<view class="header">
+		<image class="avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl :'/assets/images/ask.png'}}"></image>
+		<view bindtap="goLogin" class="nickname">{{userInfo.nickName ? userInfo.nickName : '点击登录'}}</view>
+	</view>
+	<!-- 提示 -->
+	<view class="tips">
+		<view class="left">
+			<view class="title">{{userInfo.study_hour ? userInfo.study_hour : '0'}}</view>
+			<view class="subtitle">我的粉丝</view>
+		</view>
+		<view class="middle">
+			<view class="title">{{userInfo.follow_count ? userInfo.follow_count : '0'}}</view>
+			<view class="subtitle">我的关注</view>
+		</view>
+		<view class="right">
+			<view class="title">{{userInfo.mailList_count ? userInfo.mailList_count : '0'}}</view>
+			<view class="subtitle">我的文章</view>
+		</view>
+	</view>
+	<!-- 菜单cell -->
+	<view class="cells">
+		<view class="cell">
+			<view>
+				<text>当前版本</text>
+			</view>
+			<view>
+				<text class="versionNumber">{{versionNumber}}</text>
+			</view>
+		</view>
+		<view class="cell">
+			<view>
+				<text>粉丝中心</text>
+			</view>
+			<image src="/assets/images/arrow@2x.png"></image>
+		</view>
+		<view class="cell">
+			<view>
+				<text>消息提醒</text>
+			</view>
+			<image src="/assets/images/arrow@2x.png"></image>
+		</view>
+		<view class="cell">
+			<view>
+				<text>清除缓存</text>
+			</view>
+			<image src="/assets/images/arrow@2x.png"></image>
+		</view>
+		<view class="cell">
+			<view>
+				<text>商务合作</text>
+			</view>
+			<image src="/assets/images/arrow@2x.png"></image>
+		</view>
+		<view bindtap="makeCall" class="cell">
+			<view>
+				<text>在线客服</text>
+			</view>
+			<image src="/assets/images/arrow@2x.png"></image>
+		</view>
+	</view>
+</view>
