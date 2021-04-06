@@ -4,14 +4,15 @@
     <image class="logo" src="/assets/images/logo@2x.png"></image>
     <text class="title">小卿词典</text>
     <image class="login-tips" src="/assets/images/login_tips@2x.png"></image>
-    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="wx-login-button">
+    <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="wx-login-button"> -->
+    <button bindtap="getUserInfo"  class="wx-login-button">
       <image class="wx-login-img" src="/assets/images/wx_login@2x.png"></image>
     </button>
     <text bindtap="goToPhoneLogin" class="phone-login">
       手机号登录
     </text>
     <text class="bottom-tip">
-      Copyright © 2020 小卿词典 
+      Copyright © 2021 小卿词典 
     </text>
   </view>
 </view>

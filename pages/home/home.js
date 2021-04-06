@@ -1,12 +1,17 @@
 // pages/home/home.js
 import axios from '../../utils/axios'
 const util = require('../../utils/util');
+
+var apps = getApp();
+var globalData = apps.globalData;
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    globalData,
     swipers: null, // 轮播图数据
     mailLists: null, // 推荐课程
     videos: null, // 热门视频

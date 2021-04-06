@@ -2,21 +2,21 @@
 <view class="my-container">
 	<!-- 头部 -->
 	<view class="header">
-		<image class="avatar" src="{{userInfo.avatar ? userInfo.avatar :'/assets/images/facai.png'}}"></image>
-		<view class="nickname">{{userInfo.nickname ? userInfo.nickname : '王王今'}}</view>
+		<image class="avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl :'/assets/images/ask.png'}}"></image>
+		<view bindtap="goLogin" class="nickname">{{userInfo.nickName ? userInfo.nickName : '点击登录'}}</view>
 	</view>
 	<!-- 提示 -->
 	<view class="tips">
 		<view class="left">
-			<view class="title">{{userInfo.study_hour ? userInfo.study_hour : '199'}}</view>
+			<view class="title">{{userInfo.study_hour ? userInfo.study_hour : '0'}}</view>
 			<view class="subtitle">我的粉丝</view>
 		</view>
 		<view class="middle">
-			<view class="title">{{userInfo.follow_count ? userInfo.follow_count : '30'}}</view>
+			<view class="title">{{userInfo.follow_count ? userInfo.follow_count : '0'}}</view>
 			<view class="subtitle">我的关注</view>
 		</view>
 		<view class="right">
-			<view class="title">{{userInfo.mailList_count ? userInfo.mailList_count : '1'}}</view>
+			<view class="title">{{userInfo.mailList_count ? userInfo.mailList_count : '0'}}</view>
 			<view class="subtitle">我的文章</view>
 		</view>
 	</view>

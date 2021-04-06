@@ -7,7 +7,7 @@ Page({
    */
   data: {
     userInfo: {},
-    versionNumber:'1.0.1',//版本号
+    versionNumber: '1.0.3', //版本号
   },
 
   /**
@@ -16,9 +16,29 @@ Page({
   onLoad: function (options) {
     // this.getUserInfoData()
   },
+  //查看用户是否已授权
+  onShow: function (options) {
+    let userInfo = wx.getStorageSync('userInfo')
+    if (userInfo) {
+      this.setData({
+        userInfo: userInfo
+      })
+    }
+  },
+  //前往登录页面
+  goLogin() {
+    //如果
+    if (!this.data.userInfo.nickName) {
+      wx.navigateTo({
+        url: '/pages/login/login',
+      })
+    }
 
-  async getUserInfoData(){
-    const res = await axios({url: 'my/info'})
+  },
+  async getUserInfoData() {
+    const res = await axios({
+      url: 'my/info'
+    })
 
     if (res.data.status === 0) {
       this.setData({

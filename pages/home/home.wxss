@@ -1,4 +1,22 @@
 /* pages/home/home.wxss */
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: #fff;
+  background: #f5be59;
+}
+
+.nav-bar .search {
+  width: 60%;
+  color: #f5be59;
+  font-size: 14px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50px;
+  background: #fff;
+  padding-left: 14px;
+}
 
 .home-container {
   padding: 20rpx;

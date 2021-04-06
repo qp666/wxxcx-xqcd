@@ -1,5 +1,8 @@
 <!--pages/home/home.wxml-->
-<view class="home-container">
+<view class="nav-bar" style="height:{{globalData.navBarHeight}}px;">
+    <input class="search"  placeholder="啥都搜不到,建议你别点" style="height:{{globalData.menuHeight}}px; min-height:{{globalData.menuHeight}}px; line-height:{globalData.menuHeight}}px; left:{{globalData.menuRight}}px; bottom:{{globalData.menuBotton}}px;"></input>
+</view>
+<view class="home-container" style="margin-top:{{globalData.navBarHeight}}px;">
 	<!-- search-bar -->
 	<!-- <search-bar placeholder="{{terms}}"></search-bar> -->
 	<!-- 推荐课程 -->
@@ -32,7 +35,7 @@
 		</view>
 	</view>
 	<!-- 热门视频 -->
-	<view class="detail">
+	<!-- <view class="detail">
 		<view class="tips" bindtap="goVideo">
 			<view class="tip">热门视频</view>
 			<image src="/assets/images/arrow@2x.png"></image>
@@ -44,5 +47,5 @@
 				<view class="subtitle">{{item.view_count}}人已观看</view>
 			</view>
 		</view>
-	</view>
+	</view> -->
 </view>
