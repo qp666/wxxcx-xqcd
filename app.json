@@ -25,7 +25,7 @@
       "selectedIconPath": "assets/tabs/icon_home_selected@2x.png"
     }, {
       "pagePath": "pages/mailList/mailList",
-      "text": "通讯录",
+      "text": "荒芜之地",
       "iconPath": "assets/tabs/icon_course@2x.png",
       "selectedIconPath": "assets/tabs/icon_course_selected@2x.png"
     }, {
